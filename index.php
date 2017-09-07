@@ -17,7 +17,7 @@
 
         $students = array();
 
-        // Add first/second/third students
+        // Add first student
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -27,7 +27,7 @@
         $first->add_grade(75);
         $first->add_grade(55);
         $students['j123'] = $first;
-
+        // Add second student
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -38,7 +38,7 @@
         $second->add_grade(80);
         $second->add_grade(50);
         $students['a456'] = $second;
-
+        // Add third student (myself)
         $third = new Student();
         $third->surname = "Jang";
         $third->first_name = "Connor";
@@ -50,7 +50,7 @@
         $students['c789'] = $third;
 
         ksort($students); // one of the many sort functions
-
+        // Displays the students in alphabetical order, by first name
         foreach($students as $student)
             echo $student->toString();
 
