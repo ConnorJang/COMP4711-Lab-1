@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="COMP4711-lab-1">
+    <serverData>
+      <paths name="COMP4711-lab-1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="COMP4711-Lab-1" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
