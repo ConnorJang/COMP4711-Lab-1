@@ -12,13 +12,12 @@
         <title></title>
     </head>
     <body>
-        <?php echo "Hello out there... We're on the air... It's hockey night tonight" ?>
         <?php
         include('Student.php');
 
         $students = array();
 
-        // Add first/second student
+        // Add first/second/third students
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -39,6 +38,18 @@
         $second->add_grade(80);
         $second->add_grade(50);
         $students['a456'] = $second;
+
+        $third = new Student();
+        $third->surname = "Jang";
+        $third->first_name = "Connor";
+        $third->add_email('home','cjang21@my.bcit.ca');
+        $third->add_email('work1','cjang21@my.bcit.ca');
+        $third->add_grade(100);
+        $third->add_grade(100);
+        $third->add_grade(100);
+        $students['c789'] = $third;
+
+        ksort($students); // one of the many sort functions
 
         foreach($students as $student)
             echo $student->toString();
